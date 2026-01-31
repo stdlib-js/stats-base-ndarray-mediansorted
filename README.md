@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import mediansorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mediansorted@esm/index.mjs';
+import mediansorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mediansorted@v0.1.0-esm/index.mjs';
 ```
 
 #### mediansorted( arrays )
@@ -99,7 +99,7 @@ The function has the following parameters:
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import mediansorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mediansorted@esm/index.mjs';
+import mediansorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mediansorted@v0.1.0-esm/index.mjs';
 
 // Create a linearly spaced sorted array:
 var xbuf = linspace( 0.0, 10.0, 11 );
