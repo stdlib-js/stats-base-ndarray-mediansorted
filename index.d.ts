@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the median value of a sorted one-dimensional ndarray.
+* Computes the median value of a sorted one-dimensional ndarray.
 *
-* @module @stdlib/stats-base-ndarray-mediansorted
+* @param arrays - array-like object containing a sorted input ndarray
+* @returns median value
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var mediansorted = require( '@stdlib/stats-base-ndarray-mediansorted' );
 *
 * var xbuf = [ 1.0, 2.0, 3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
@@ -33,12 +37,9 @@
 * var v = mediansorted( [ x ] );
 * // returns 2.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function mediansorted<T extends ndarray = ndarray>( arrays: [ T ] ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = mediansorted;
